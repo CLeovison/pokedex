@@ -44,8 +44,9 @@ export default function PokeData() {
           Submit
         </button>
         <p>{isLoading ? "...Loading" : ""}</p>
+        <p>{pokemonData?.name}</p>
         <img src={pokemonData?.sprites?.front_default} alt="" srcset="" />
       </form>
     </>
-  );
+  ); 
 }
